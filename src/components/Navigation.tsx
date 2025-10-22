@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const scrollToSection = (id: string) => {
@@ -13,12 +14,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-full h-full text-accent" fill="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-primary-foreground">TRIKONANTARA</span>
+            <img src={logo} alt="Trikonantara" className="h-12 w-auto" />
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -39,6 +35,12 @@ const Navigation = () => {
               className="text-primary-foreground hover:text-accent transition-colors"
             >
               Services
+            </button>
+            <button 
+              onClick={() => scrollToSection('team')}
+              className="text-primary-foreground hover:text-accent transition-colors"
+            >
+              Team
             </button>
             <button 
               onClick={() => scrollToSection('portfolio')}

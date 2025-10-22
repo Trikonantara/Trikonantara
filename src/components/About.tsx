@@ -11,24 +11,6 @@ const About = () => {
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Our journey began with a vision to bridge imagination and technology, creating immersive experiences that transform industries. With innovation at our core, we continue to push the boundaries of AR, VR, and 3D technology to redefine digital interaction.
             </p>
-            <div className="grid grid-cols-2 gap-6 mt-8">
-              <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">10+</div>
-                <div className="text-sm text-muted-foreground">Projects Delivered</div>
-              </div>
-              <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">10+</div>
-                <div className="text-sm text-muted-foreground">Happy Clients</div>
-              </div>
-              <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">1+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">5+</div>
-                <div className="text-sm text-muted-foreground">Team Members</div>
-              </div>
-            </div>
           </div>
           
           <div className="relative">
