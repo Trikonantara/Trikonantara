@@ -23,10 +23,10 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Transforming Businesses Through Immersive Technology
+            Immersive Innovation
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-            We specialize in AR/VR/XR solutions and professional software development tailored to drive innovation and growth.
+            At Trikonantara, we merge imagination with cutting-edge technology, crafting immersive experiences that redefine industries and inspire new frontiers of exploration.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button 

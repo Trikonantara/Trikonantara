@@ -3,29 +3,14 @@ import { Glasses, Smartphone, Code, Box, Palette, ArrowRight } from "lucide-reac
 
 const services = [
   {
-    icon: Glasses,
-    title: "Immersive XR Solutions",
-    description: "Cutting-edge extended reality solutions that transform how users interact with digital content and environments.",
-  },
-  {
-    icon: Smartphone,
-    title: "AR/VR Support",
-    description: "Comprehensive support for augmented and virtual reality projects, ensuring optimal performance and user experience.",
-  },
-  {
-    icon: Code,
-    title: "Software Product Development",
-    description: "Custom software solutions built with cutting-edge technologies to address your specific business challenges.",
-  },
-  {
     icon: Box,
     title: "3D Solutions",
     description: "Powerful 3D modeling, visualization, and interactive experiences to bring your concepts to life with precision.",
   },
   {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "User-centered design that combines aesthetics with functionality to create intuitive and engaging digital experiences.",
+    icon: Smartphone,
+    title: "AR/VR Support",
+    description: "Comprehensive support for augmented and virtual reality projects, ensuring optimal performance and user experience.",
   },
 ];
 

@@ -13,19 +13,19 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">50+</div>
+                <div className="text-4xl font-bold text-accent mb-2">10+</div>
                 <div className="text-sm text-muted-foreground">Projects Delivered</div>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">30+</div>
+                <div className="text-4xl font-bold text-accent mb-2">10+</div>
                 <div className="text-sm text-muted-foreground">Happy Clients</div>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">5+</div>
+                <div className="text-4xl font-bold text-accent mb-2">1+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-                <div className="text-4xl font-bold text-accent mb-2">15+</div>
+                <div className="text-4xl font-bold text-accent mb-2">5+</div>
                 <div className="text-sm text-muted-foreground">Team Members</div>
               </div>
             </div>
