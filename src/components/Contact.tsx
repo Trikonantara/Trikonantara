@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Youtube, Linkedin, Instagram, Twitter } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 
@@ -105,6 +105,54 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-foreground mb-1">Location</h3>
                   <p className="text-muted-foreground">Hyderabad - India</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="font-bold text-foreground mb-4">Follow Us</h3>
+                <div className="flex gap-3">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    asChild
+                  >
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                      <Youtube className="w-5 h-5" />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    asChild
+                  >
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    asChild
+                  >
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                      <Instagram className="w-5 h-5" />
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    asChild
+                  >
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                      <Twitter className="w-5 h-5" />
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
