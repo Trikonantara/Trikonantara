@@ -1,5 +1,3 @@
-import startupIndiaLogo from "@/assets/startup-india-logo.png";
-
 const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -74,17 +72,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-8">
-          <div className="flex justify-center mb-6">
-            <img 
-              src={startupIndiaLogo} 
-              alt="Startup India" 
-              className="h-16 object-contain"
-            />
-          </div>
-          <p className="text-center text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} Trikonantara. All rights reserved.
-          </p>
+        <div className="border-t border-primary-foreground/10 pt-8 text-center text-sm text-primary-foreground/60">
+          <p>© {new Date().getFullYear()} Trikonantara. All rights reserved.</p>
         </div>
       </div>
     </footer>
