@@ -1,3 +1,5 @@
+import innovationImage from "@/assets/innovation-core.png";
+
 const About = () => {
   return (
     <section id="about" className="py-24 bg-muted/30">
@@ -14,18 +16,12 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-full h-full text-accent" fill="currentColor">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Innovation at Our Core</h3>
-                <p className="text-muted-foreground">
-                  Pushing boundaries in immersive technology
-                </p>
-              </div>
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={innovationImage} 
+                alt="Innovation at Our Core - AR/VR Technology" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
