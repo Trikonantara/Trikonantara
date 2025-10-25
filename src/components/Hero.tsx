@@ -39,8 +39,7 @@ const Hero = () => {
             <Button 
               onClick={() => scrollToSection('contact')}
               size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8"
             >
               Contact Us
             </Button>
