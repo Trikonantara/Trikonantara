@@ -15,7 +15,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Trikonantara" className="h-12 w-auto" />
-            <span className="text-2xl font-bold text-primary-foreground">Trikonantara</span>
+            <span className="text-2xl font-bold text-primary-foreground">TRIKONANTARA</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">

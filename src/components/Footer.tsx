@@ -57,19 +57,17 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>AR/VR Development</li>
-              <li>3D Visualization</li>
-              <li>Software Development</li>
-              <li>UI/UX Design</li>
+              <li>3D Solutions</li>
+              <li>AR/VR Support</li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>contact@trikonantara.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>Innovation Hub, Tech District</li>
+              <li>contactus@trikonantara.com</li>
+              <li>+91 9493803632</li>
+              <li>Hyderabad - India</li>
             </ul>
           </div>
         </div>
