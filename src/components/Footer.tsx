@@ -59,6 +59,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li>3D Solutions</li>
               <li>AR/VR Support</li>
+              <li>Webservice and APP Build</li>
             </ul>
           </div>
 
@@ -67,7 +68,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li>contactus@trikonantara.com</li>
               <li>+91 9493803632</li>
-              <li>Hyderabad - India</li>
+              <li>Hyderabad, Telangana - India</li>
             </ul>
           </div>
         </div>

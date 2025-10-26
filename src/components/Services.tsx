@@ -12,6 +12,11 @@ const services = [
     title: "AR/VR Support",
     description: "Comprehensive support for augmented and virtual reality projects, ensuring optimal performance and user experience.",
   },
+  {
+    icon: Code,
+    title: "Webservice and APP Build",
+    description: "Custom web services and mobile application development tailored to your business needs with cutting-edge technology.",
+  },
 ];
 
 const Services = () => {
@@ -25,7 +30,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Card 
               key={index} 
