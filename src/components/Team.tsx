@@ -26,11 +26,11 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {team.map((member, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-square overflow-hidden max-w-[300px] mx-auto">
                   <img 
                     src={member.image} 
                     alt={member.name}

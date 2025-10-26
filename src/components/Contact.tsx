@@ -112,14 +112,14 @@ const Contact = () => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-bold text-foreground mb-4">Follow Us</h3>
-                <div className="flex gap-3">
+                <div className="flex gap-3 justify-center">
                   <Button
                     variant="outline"
                     size="icon"
                     className="hover:bg-accent hover:text-accent-foreground transition-colors"
                     asChild
                   >
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/@Trikonantara" target="_blank" rel="noopener noreferrer">
                       <Youtube className="w-5 h-5" />
                     </a>
                   </Button>
@@ -129,7 +129,7 @@ const Contact = () => {
                     className="hover:bg-accent hover:text-accent-foreground transition-colors"
                     asChild
                   >
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/trikonantara-innovation-technology-private-limited/" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="w-5 h-5" />
                     </a>
                   </Button>
