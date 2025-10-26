@@ -44,6 +44,12 @@ const Navigation = () => {
               Team
             </button>
             <button 
+              onClick={() => scrollToSection('projects')}
+              className="text-primary-foreground hover:text-accent transition-colors"
+            >
+              Projects
+            </button>
+            <button 
               onClick={() => scrollToSection('portfolio')}
               className="text-primary-foreground hover:text-accent transition-colors"
             >

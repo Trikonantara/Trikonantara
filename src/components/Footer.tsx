@@ -51,6 +51,14 @@ const Footer = () => {
                   Services
                 </button>
               </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('projects')}
+                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                >
+                  Projects
+                </button>
+              </li>
             </ul>
           </div>
 
