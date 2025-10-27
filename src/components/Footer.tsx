@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -85,13 +87,19 @@ const Footer = () => {
           <div className="text-center mb-4">
             <p className="text-sm text-primary-foreground/60 mb-2">CIN: U62010TS2024PTC192096</p>
             <div className="flex justify-center gap-4 text-sm">
-              <button className="text-primary-foreground/80 hover:text-accent transition-colors">
+              <Link 
+                to="/terms-and-conditions"
+                className="text-primary-foreground/80 hover:text-accent transition-colors"
+              >
                 Terms & Conditions
-              </button>
+              </Link>
               <span className="text-primary-foreground/60">|</span>
-              <button className="text-primary-foreground/80 hover:text-accent transition-colors">
+              <Link 
+                to="/privacy-policy"
+                className="text-primary-foreground/80 hover:text-accent transition-colors"
+              >
                 Privacy Policy
-              </button>
+              </Link>
             </div>
           </div>
           <p className="text-center text-sm text-primary-foreground/60">
