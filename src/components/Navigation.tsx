@@ -14,7 +14,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Trikonantara" className="h-[67px] w-auto" />
+            <img src={logo} alt="Trikonantara" className="h-[54px] w-auto" />
             <span className="text-2xl font-bold text-primary-foreground">TRIKONANTARA</span>
           </div>
           
