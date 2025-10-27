@@ -81,27 +81,25 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 pt-8">
-          <div className="text-center mb-4">
-            <p className="text-sm text-primary-foreground/60 mb-2">CIN: U62010TS2024PTC192096</p>
-            <div className="flex justify-center gap-4 text-sm">
-              <Link 
-                to="/terms-and-conditions"
-                className="text-primary-foreground/80 hover:text-accent transition-colors"
-              >
-                Terms & Conditions
-              </Link>
-              <span className="text-primary-foreground/60">|</span>
-              <Link 
-                to="/privacy-policy"
-                className="text-primary-foreground/80 hover:text-accent transition-colors"
-              >
-                Privacy Policy
-              </Link>
-            </div>
+          <div className="flex flex-wrap justify-center items-center gap-2 text-sm text-primary-foreground/60">
+            <span>CIN: U62010TS2024PTC192096</span>
+            <span>|</span>
+            <Link 
+              to="/terms-and-conditions"
+              className="text-primary-foreground/80 hover:text-accent transition-colors"
+            >
+              Terms & Conditions
+            </Link>
+            <span>|</span>
+            <Link 
+              to="/privacy-policy"
+              className="text-primary-foreground/80 hover:text-accent transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <span>|</span>
+            <span>© {new Date().getFullYear()} Trikonantara. All rights reserved.</span>
           </div>
-          <p className="text-center text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} Trikonantara. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
