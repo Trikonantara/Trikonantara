@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -14,11 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-full h-full text-accent" fill="currentColor">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
+              <img src={logo} alt="Trikonantara" className="h-8 w-auto" />
               <span className="text-xl font-bold">TRIKONANTARA</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
