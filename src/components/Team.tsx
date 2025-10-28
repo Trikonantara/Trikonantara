@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Linkedin } from "lucide-react";
 import ceoImage from "@/assets/ceo.jpg";
 import ctoImage from "@/assets/cto.png";
 
@@ -7,11 +8,13 @@ const team = [
     name: "Saipradeep Goud Srimantula",
     role: "CEO",
     image: ceoImage,
+    linkedin: "https://www.linkedin.com/in/srimanthulla-saipradeepgoud/",
   },
   {
     name: "Kiran Mudhili",
     role: "CTO",
     image: ctoImage,
+    linkedin: "https://www.linkedin.com/in/mudhilikiran/",
   },
 ];
 
@@ -39,7 +42,16 @@ const Team = () => {
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-2xl font-bold text-foreground mb-2">{member.name}</h3>
-                  <p className="text-accent font-semibold text-lg">{member.role}</p>
+                  <p className="text-accent font-semibold text-lg mb-3">{member.role}</p>
+                  <a 
+                    href={member.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center text-primary hover:text-accent transition-colors"
+                    aria-label={`${member.name}'s LinkedIn profile`}
+                  >
+                    <Linkedin size={20} />
+                  </a>
                 </div>
               </CardContent>
             </Card>
