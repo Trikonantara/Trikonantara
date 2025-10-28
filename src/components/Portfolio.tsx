@@ -5,21 +5,25 @@ const projects = [
     title: "Virtual Training Platform",
     category: "VR Solution",
     description: "Immersive training environment for enterprise clients",
+    video: "https://cdn.pixabay.com/video/2024/01/12/196389-903984961_large.mp4",
   },
   {
     title: "AR Product Visualization",
     category: "AR Application",
     description: "Interactive product showcase for retail industry",
+    video: "https://cdn.pixabay.com/video/2023/03/07/153139-805767027_large.mp4",
   },
   {
     title: "3D Property Tours",
     category: "3D Visualization",
     description: "Virtual property walkthrough system",
+    video: "https://cdn.pixabay.com/video/2022/05/17/117669-710667626_large.mp4",
   },
   {
     title: "Medical Simulation",
     category: "XR Platform",
     description: "Advanced medical training simulation",
+    video: "https://cdn.pixabay.com/video/2023/06/15/167840-836761449_large.mp4",
   },
 ];
 
@@ -40,7 +44,15 @@ const Portfolio = () => {
               key={index}
               className="group overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
-              <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden">
+                <video 
+                  src={project.video} 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white text-lg font-semibold">View Project</span>
                 </div>

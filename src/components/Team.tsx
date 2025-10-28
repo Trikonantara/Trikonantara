@@ -41,17 +41,19 @@ const Team = () => {
                   />
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{member.name}</h3>
-                  <p className="text-accent font-semibold text-lg mb-3">{member.role}</p>
-                  <a 
-                    href={member.linkedin} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center text-primary hover:text-accent transition-colors"
-                    aria-label={`${member.name}'s LinkedIn profile`}
-                  >
-                    <Linkedin size={20} />
-                  </a>
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <h3 className="text-2xl font-bold text-foreground">{member.name}</h3>
+                    <a 
+                      href={member.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center text-primary hover:text-accent transition-colors"
+                      aria-label={`${member.name}'s LinkedIn profile`}
+                    >
+                      <Linkedin size={20} />
+                    </a>
+                  </div>
+                  <p className="text-accent font-semibold text-lg">{member.role}</p>
                 </div>
               </CardContent>
             </Card>
