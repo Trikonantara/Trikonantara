@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-6">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-8">
+        <div className="border-t border-primary-foreground/10 pt-4">
           <div className="flex flex-wrap justify-center items-center gap-0.5 text-sm text-primary-foreground/60">
             <span>CIN: U62010TS2024PTC192096</span>
             <span>|</span>
