@@ -41,13 +41,13 @@ const Team = () => {
                   />
                 </div>
                 <div className="p-6 text-center">
-                  <div className="flex items-center justify-center gap-3 mb-2">
+                  <div className="flex items-center justify-center mb-2">
                     <h3 className="text-2xl font-bold text-foreground">{member.name}</h3>
                     <a 
                       href={member.linkedin} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center text-primary hover:text-accent transition-colors flex-shrink-0"
+                      className="inline-flex items-center justify-center text-primary hover:text-accent transition-colors ml-3 flex-shrink-0"
                       aria-label={`${member.name}'s LinkedIn profile`}
                     >
                       <Linkedin size={20} />
