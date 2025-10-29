@@ -6,6 +6,7 @@ const projects = [
     category: "VR Solution",
     description: "Immersive training environment for enterprise clients",
     video: "https://cdn.pixabay.com/video/2024/01/12/196389-903984961_large.mp4",
+    link: "https://www.youtube.com/watch?v=_r3zG5xMtxw",
   },
   {
     title: "AR Product Visualization",
@@ -43,6 +44,7 @@ const Portfolio = () => {
             <Card 
               key={index}
               className="group overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
+              onClick={() => project.link && window.open(project.link, '_blank')}
             >
               <div className="aspect-video relative overflow-hidden">
                 <video 
@@ -54,7 +56,9 @@ const Portfolio = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg font-semibold">View Project</span>
+                  <span className="text-white text-lg font-semibold">
+                    {project.link ? 'Watch Video' : 'View Project'}
+                  </span>
                 </div>
               </div>
               <CardContent className="p-6">
