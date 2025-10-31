@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Glasses, Smartphone, Code, Box, Palette, ArrowRight } from "lucide-react";
+import { Box, Glasses, Globe, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const services = [
@@ -10,12 +10,12 @@ const services = [
     description: "Powerful 3D modeling, visualization, and interactive experiences to bring your concepts to life with precision.",
   },
   {
-    icon: Smartphone,
+    icon: Glasses,
     title: "AR/VR Support",
     description: "Comprehensive support for augmented and virtual reality projects, ensuring optimal performance and user experience.",
   },
   {
-    icon: Code,
+    icon: Globe,
     title: "Webservice and APP Build",
     description: "Custom web services and mobile application development tailored to your business needs with cutting-edge technology.",
   },
