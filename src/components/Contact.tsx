@@ -116,7 +116,7 @@ const Contact = () => {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    className="bg-foreground text-background hover:bg-foreground/90 hover:text-background border-foreground transition-colors"
                     asChild
                   >
                     <a href="https://www.youtube.com/@Trikonantara" target="_blank" rel="noopener noreferrer">
@@ -126,7 +126,7 @@ const Contact = () => {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    className="bg-foreground text-background hover:bg-foreground/90 hover:text-background border-foreground transition-colors"
                     asChild
                   >
                     <a href="https://www.linkedin.com/company/trikonantara-innovation-technology-private-limited/" target="_blank" rel="noopener noreferrer">
@@ -136,7 +136,7 @@ const Contact = () => {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    className="bg-foreground text-background hover:bg-foreground/90 hover:text-background border-foreground transition-colors"
                     asChild
                   >
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -146,7 +146,7 @@ const Contact = () => {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="hover:bg-accent hover:text-accent-foreground transition-colors"
+                    className="bg-foreground text-background hover:bg-foreground/90 hover:text-background border-foreground transition-colors"
                     asChild
                   >
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
