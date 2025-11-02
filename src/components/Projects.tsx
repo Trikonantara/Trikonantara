@@ -56,7 +56,7 @@ const Projects = () => {
                   src={project.image} 
                   alt={project.title}
                   className={`w-full h-full object-cover hover:scale-105 transition-transform duration-500 ${
-                    index === 0 ? 'object-[center_20%]' : 'object-top'
+                    index === 0 ? 'object-[center_20%]' : 'object-[center_35%]'
                   }`}
                 />
                 <div className="absolute top-4 left-4 w-14 h-14 bg-background/90 backdrop-blur-sm rounded-lg flex items-center justify-center">
