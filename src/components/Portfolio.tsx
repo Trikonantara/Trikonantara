@@ -61,9 +61,9 @@ const Portfolio = () => {
                   </span>
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 bg-primary text-primary-foreground">
                 <div className="text-sm text-accent font-semibold mb-2">{project.category}</div>
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-muted-foreground">{project.description}</p>
