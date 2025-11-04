@@ -6,9 +6,9 @@ import visualizationImage from "@/assets/3d-visualization.png";
 
 const projects = [
   {
-    title: "Virtual Training Platform",
+    title: "Virtual Platform",
     category: "VR Solution",
-    description: "Immersive training environment for enterprise clients",
+    description: "We create immersive virtual environments",
     image: vrSolutionImage,
     link: "https://www.youtube.com/watch?v=_r3zG5xMtxw",
   },
@@ -25,9 +25,9 @@ const projects = [
     image: visualizationImage,
   },
   {
-    title: "Medical Simulation",
+    title: "Enterprise Solutions",
     category: "XR Platform",
-    description: "Advanced medical training simulation",
+    description: "We develop immersive XR platforms tailored for enterprise solutions",
     image: xrPlatformImage,
   },
 ];
