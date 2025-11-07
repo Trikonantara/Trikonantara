@@ -5,7 +5,7 @@ import studyVrImage from "@/assets/study-vr.jpg";
 
 const projects = [
   {
-    title: "Bharat VR",
+    title: "BHARAT VR",
     subtitle: "India's Heritage in Virtual Reality (Flagship Project)",
     description: "Bharat VR is Trikonantara's flagship immersive experience that brings the rich cultural, architectural, and spiritual heritage of India to life through Virtual Reality. This project enables users to virtually explore India's iconic monuments, ancient temples, and forgotten stories—preserving and showcasing the country's timeless beauty through 3D photorealistic environments and interactive storytelling.",
     details: "From the grandeur of Hampi and Khajuraho to the serenity of Bodh Gaya and Varanasi, Bharat VR offers an authentic and emotionally engaging journey through India's living history. Designed for museums, tourism boards, and educational platforms, it aims to make heritage exploration accessible to global audiences through VR headsets and web-based immersive experiences.",
@@ -19,7 +19,7 @@ const projects = [
     ]
   },
   {
-    title: "Study VR",
+    title: "STUDY VR",
     subtitle: "Immersive Learning Redefined",
     description: "Study VR is an innovative educational platform by Trikonantara that transforms traditional learning into an interactive, 3D immersive experience. Built for schools, universities, and training institutions, Study VR bridges the gap between theory and practice by enabling students to visualize complex concepts, interact with virtual labs, and learn by experience—anytime, anywhere.",
     details: "Whether it's exploring human anatomy, understanding space physics, or performing virtual chemistry experiments, Study VR makes learning engaging, safe, and deeply memorable.",
