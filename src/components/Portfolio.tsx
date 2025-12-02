@@ -1,28 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
-import vrSolutionImage from "@/assets/vr-solution.png";
-import xrPlatformImage from "@/assets/xr-platform.png";
-import visualizationImage from "@/assets/3d-visualization.png";
+import immersiveTechImage from "@/assets/immersive-technology.png";
+import vfxProductionImage from "@/assets/vfx-production.png";
+import motionDesignImage from "@/assets/motion-design.png";
 
 const projects = [
   {
     title: "XR: AR/VR/MR",
     category: "Immersive Technology",
     description: "We create cutting-edge augmented, virtual, and mixed reality experiences for enterprises and consumers",
-    image: vrSolutionImage,
+    image: immersiveTechImage,
     link: "https://www.youtube.com/watch?v=_r3zG5xMtxw",
   },
   {
     title: "Visual Effects",
     category: "VFX Production",
     description: "High-quality visual effects and 3D visualization for films, advertisements, and digital media",
-    image: visualizationImage,
+    image: vfxProductionImage,
     link: "https://youtu.be/d5wQoUDpffI",
   },
   {
     title: "Animations",
     category: "Motion Design",
     description: "Professional 2D and 3D animations for storytelling, branding, and interactive applications",
-    image: xrPlatformImage,
+    image: motionDesignImage,
   },
 ];
 
