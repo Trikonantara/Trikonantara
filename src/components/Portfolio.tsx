@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "3D Property Tours",
-    category: "3D Visualization",
+    category: "Visual Effects",
     description: "Virtual property walkthrough system",
     image: visualizationImage,
   },
