@@ -7,14 +7,14 @@ import visualizationImage from "@/assets/3d-visualization.png";
 const projects = [
   {
     title: "Virtual Platform",
-    category: "VR Solution",
+    category: "XR: AR/VR/MR",
     description: "We create immersive virtual environments",
     image: vrSolutionImage,
     link: "https://www.youtube.com/watch?v=_r3zG5xMtxw",
   },
   {
     title: "AR Product Visualization",
-    category: "AR Application",
+    category: "XR: AR/VR/MR",
     description: "Interactive product showcase for retail industry",
     image: arSolutionImage,
   },
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Enterprise Solutions",
-    category: "XR Platform",
+    category: "XR: AR/VR/MR",
     description: "We develop immersive XR platforms tailored for enterprise solutions",
     image: xrPlatformImage,
   },
