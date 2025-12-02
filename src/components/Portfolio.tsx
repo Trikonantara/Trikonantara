@@ -16,6 +16,7 @@ const projects = [
     category: "VFX Production",
     description: "High-quality visual effects and 3D visualization for films, advertisements, and digital media",
     image: visualizationImage,
+    link: "https://youtu.be/d5wQoUDpffI",
   },
   {
     title: "Animations",
