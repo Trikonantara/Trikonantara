@@ -1,33 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
 import vrSolutionImage from "@/assets/vr-solution.png";
-import arSolutionImage from "@/assets/ar-solution.png";
 import xrPlatformImage from "@/assets/xr-platform.png";
 import visualizationImage from "@/assets/3d-visualization.png";
 
 const projects = [
   {
-    title: "Virtual Platform",
-    category: "XR: AR/VR/MR",
-    description: "We create immersive virtual environments",
+    title: "XR: AR/VR/MR",
+    category: "Immersive Technology",
+    description: "We create cutting-edge augmented, virtual, and mixed reality experiences for enterprises and consumers",
     image: vrSolutionImage,
     link: "https://www.youtube.com/watch?v=_r3zG5xMtxw",
   },
   {
-    title: "AR Product Visualization",
-    category: "XR: AR/VR/MR",
-    description: "Interactive product showcase for retail industry",
-    image: arSolutionImage,
-  },
-  {
-    title: "3D Property Tours",
-    category: "Visual Effects",
-    description: "Virtual property walkthrough system",
+    title: "Visual Effects",
+    category: "VFX Production",
+    description: "High-quality visual effects and 3D visualization for films, advertisements, and digital media",
     image: visualizationImage,
   },
   {
-    title: "Enterprise Solutions",
-    category: "XR: AR/VR/MR",
-    description: "We develop immersive XR platforms tailored for enterprise solutions",
+    title: "Animations",
+    category: "Motion Design",
+    description: "Professional 2D and 3D animations for storytelling, branding, and interactive applications",
     image: xrPlatformImage,
   },
 ];
