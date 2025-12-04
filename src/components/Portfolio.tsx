@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import immersiveTechImage from "@/assets/immersive-technology.png";
 import vfxProductionImage from "@/assets/vfx-production.png";
 import motionDesignImage from "@/assets/motion-design.png";
+import realEstateImage from "@/assets/3d-visualization.png";
 
 const projects = [
   {
@@ -23,6 +24,12 @@ const projects = [
     category: "Motion Design",
     description: "Professional 2D and 3D animations for storytelling, branding, and interactive applications",
     image: motionDesignImage,
+  },
+  {
+    title: "Real Estate",
+    category: "3D Visualization",
+    description: "Stunning 3D architectural visualizations and virtual property tours for real estate marketing",
+    image: realEstateImage,
   },
 ];
 
