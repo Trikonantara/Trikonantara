@@ -1,4 +1,4 @@
-import innovationImage from "@/assets/innovation-core.png";
+import whoWeAreImage from "@/assets/who-we-are.png";
 
 const About = () => {
   return (
