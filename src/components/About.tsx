@@ -1,4 +1,4 @@
-import innovationImage from "@/assets/innovation-core.png";
+import whoWeAreImage from "@/assets/who-we-are.png";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src={innovationImage} 
+                src={whoWeAreImage} 
                 alt="Innovation at Our Core - AR/VR Technology" 
                 className="w-full h-full object-cover"
               />
