@@ -103,12 +103,14 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <div key={index} className="relative pt-16">
-              {/* Floating image */}
+              {/* Floating image with glow */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-40 h-40 flex items-center justify-center">
+                <div className="absolute inset-0 rounded-full bg-accent/20 blur-2xl scale-110" />
+                <div className="absolute inset-2 rounded-full bg-accent/10 blur-xl" />
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-contain drop-shadow-xl"
+                  className="relative w-full h-full object-contain drop-shadow-[0_0_15px_hsl(var(--accent)/0.4)]"
                 />
               </div>
 
