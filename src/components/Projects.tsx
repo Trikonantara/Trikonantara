@@ -46,6 +46,7 @@ const projects = [
       "Curriculum-aligned modules designed for educators",
       "Supports Meta Quest, Pico, and WebXR platforms"
     ]
+  }
 ];
 
 const Projects = () => {
