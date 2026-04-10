@@ -1,26 +1,15 @@
 import { Star } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import srinivasaNaiduPhoto from "@/assets/srinivasa-naidu.jpg";
 
 const testimonials = [
   {
-    name: "Rajesh Kumar",
-    role: "Director, BuildCon Group",
+    name: "Srinivasa Naidu D",
+    role: "Divis Palace",
     quote:
-      "PROPERTY-VR transformed how we showcase our projects. Clients can now walk through properties before construction even begins. It has significantly boosted our sales.",
+      "Working with this team has been a great experience. Their Property VR solution brought our Divis Palace Premium Homes project to life with impressive clarity and realism. The quality, attention to detail, and timely delivery exceeded our expectations. It has truly helped us present our project more effectively to our clients.",
     rating: 5,
-  },
-  {
-    name: "Dr. Priya Sharma",
-    role: "Dean, EduTech Solutions",
-    quote:
-      "STUDY VR made complex subjects come alive for our students. The immersive learning experience has improved engagement and understanding dramatically.",
-    rating: 5,
-  },
-  {
-    name: "Anand Reddy",
-    role: "CEO, Heritage Foundation",
-    quote:
-      "BHARAT VR beautifully captures India's cultural heritage. The virtual tours are so realistic that visitors feel like they are actually there. Exceptional work by Trikonantara.",
-    rating: 5,
+    image: srinivasaNaiduPhoto,
   },
 ];
 
@@ -37,23 +26,30 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-8 shadow-sm border border-border flex flex-col"
+              className="bg-card rounded-lg p-8 shadow-sm border border-border flex flex-col items-center text-center"
             >
+              <Avatar className="w-24 h-24 mb-6">
+                <AvatarImage src={t.image} alt={t.name} />
+                <AvatarFallback>{t.name.charAt(0)}</AvatarFallback>
+              </Avatar>
+              
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: t.rating }).map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 fill-accent text-accent"
+                    className="w-5 h-5 fill-accent text-accent"
                   />
                 ))}
               </div>
-              <p className="text-muted-foreground italic flex-1 mb-6">
+              
+              <p className="text-muted-foreground italic mb-6">
                 "{t.quote}"
               </p>
+              
               <div>
                 <p className="font-semibold text-foreground">{t.name}</p>
                 <p className="text-sm text-muted-foreground">{t.role}</p>
