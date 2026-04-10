@@ -1,5 +1,7 @@
+import divisPalaceLogo from "@/assets/divis-palace-logo.png";
+
 const clients = [
-  { name: "Divis Palace", industry: "Real Estate" },
+  { name: "Divis Palace", industry: "Real Estate", logo: divisPalaceLogo },
 ];
 
 const Clients = () => {
@@ -21,10 +23,12 @@ const Clients = () => {
               key={index}
               className="bg-card rounded-lg p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-shadow border border-border"
             >
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                <span className="text-xl font-bold text-primary">
-                  {client.name.charAt(0)}
-                </span>
+              <div className="w-24 h-24 mb-4 flex items-center justify-center">
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
               <h3 className="font-semibold text-sm text-foreground">{client.name}</h3>
               <p className="text-xs text-muted-foreground mt-1">{client.industry}</p>
