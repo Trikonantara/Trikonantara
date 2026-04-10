@@ -1,10 +1,5 @@
 const clients = [
-  { name: "BuildCon Group", industry: "Real Estate" },
-  { name: "EduTech Solutions", industry: "Education" },
-  { name: "Heritage Foundation", industry: "Tourism" },
-  { name: "UrbanSpace Architects", industry: "Architecture" },
-  { name: "MedVista Healthcare", industry: "Healthcare" },
-  { name: "InfraCore Industries", industry: "Industrial" },
+  { name: "Divis Palace", industry: "Real Estate" },
 ];
 
 const Clients = () => {
@@ -20,7 +15,7 @@ const Clients = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
