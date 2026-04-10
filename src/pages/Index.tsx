@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Clients from "@/components/Clients";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
