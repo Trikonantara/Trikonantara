@@ -30,11 +30,11 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button 
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('services')}
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8"
             >
-              Explore Our Projects
+              Explore Our Services
             </Button>
             <Button 
               onClick={() => scrollToSection('contact')}
