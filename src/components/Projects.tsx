@@ -71,9 +71,6 @@ const Projects = () => {
                     index === 0 ? 'object-[center_20%]' : 'object-[center_35%]'
                   }`}
                 />
-                <div className="absolute top-4 left-4 w-14 h-14 bg-background/90 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                  <project.icon className="w-7 h-7 text-accent" />
-                </div>
               </div>
               
               <CardHeader className="bg-gradient-to-r from-primary/5 to-accent/5">
