@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { GraduationCap, Landmark, Building, BookOpen } from "lucide-react";
 import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
 import propertyVrImage from "@/assets/property-vr.jpg";
@@ -48,78 +46,6 @@ const projects = [
   }
 ];
 
-const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  return (
-    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-border hover:border-accent/50 flex flex-col">
-      <div className="relative h-64 overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.title}
-          className={`w-full h-full object-cover hover:scale-105 transition-transform duration-500 ${
-            index === 0 ? 'object-[center_20%]' : 'object-[center_35%]'
-          }`}
-        />
-      </div>
-      
-      <CardHeader className="bg-gradient-to-r from-primary/5 to-accent/5">
-        <CardTitle className="text-2xl font-bold mb-2">{project.title}</CardTitle>
-        <CardDescription className="text-base text-accent font-semibold">
-          {project.subtitle}
-        </CardDescription>
-      </CardHeader>
-      
-      <CardContent className="pt-6 space-y-4 flex-grow">
-        <p className="text-muted-foreground leading-relaxed text-sm">
-          {project.description}
-        </p>
-
-        {!expanded && (
-          <Button
-            variant="link"
-            className="text-accent p-0 h-auto font-semibold text-sm"
-            onClick={() => setExpanded(true)}
-          >
-            Read More →
-          </Button>
-        )}
-
-        {expanded && (
-          <>
-            <p className="text-muted-foreground leading-relaxed text-sm">
-              {project.details}
-            </p>
-            
-            <div>
-              <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
-                <BookOpen className="w-4 h-4 text-accent" />
-                Highlights:
-              </h4>
-              <ul className="space-y-2">
-                {project.highlights.map((highlight, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 flex-shrink-0" />
-                    <span className="text-muted-foreground text-sm">{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <Button
-              variant="link"
-              className="text-accent p-0 h-auto font-semibold text-sm"
-              onClick={() => setExpanded(false)}
-            >
-              Show Less ←
-            </Button>
-          </>
-        )}
-      </CardContent>
-    </Card>
-  );
-};
-
 const Projects = () => {
   return (
     <section id="projects" className="py-24 bg-muted/30">
@@ -133,7 +59,51 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <Card 
+              key={index} 
+              className="overflow-hidden hover:shadow-xl transition-all duration-300 border-border hover:border-accent/50 flex flex-col"
+            >
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className={`w-full h-full object-cover hover:scale-105 transition-transform duration-500 ${
+                    index === 0 ? 'object-[center_20%]' : 'object-[center_35%]'
+                  }`}
+                />
+              </div>
+              
+              <CardHeader className="bg-gradient-to-r from-primary/5 to-accent/5">
+                <CardTitle className="text-2xl font-bold mb-2">{project.title}</CardTitle>
+                <CardDescription className="text-base text-accent font-semibold">
+                  {project.subtitle}
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent className="pt-6 space-y-4 flex-grow">
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {project.description}
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {project.details}
+                </p>
+                
+                <div>
+                  <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
+                    <BookOpen className="w-4 h-4 text-accent" />
+                    Highlights:
+                  </h4>
+                  <ul className="space-y-2">
+                    {project.highlights.map((highlight, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 flex-shrink-0" />
+                        <span className="text-muted-foreground text-sm">{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
