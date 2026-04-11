@@ -35,10 +35,10 @@ const Navigation = () => {
               About
             </button>
             <button 
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('projects')}
               className="text-primary-foreground hover:text-accent transition-colors"
             >
-              Services
+              Projects
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
