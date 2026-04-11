@@ -40,12 +40,6 @@ const Navigation = () => {
             >
               Projects
             </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-primary-foreground hover:text-accent transition-colors"
-            >
-              Projects
-            </button>
             <Button 
               onClick={() => scrollToSection('contact')}
               className="bg-accent hover:bg-accent/90 text-accent-foreground"
