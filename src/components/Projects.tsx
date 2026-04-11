@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Glasses, GraduationCap, MapPin, Users, Landmark, BookOpen, Building } from "lucide-react";
+import { GraduationCap, Landmark, Building, BookOpen } from "lucide-react";
 import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
 import propertyVrImage from "@/assets/property-vr.jpg";
