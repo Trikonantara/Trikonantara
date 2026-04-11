@@ -35,12 +35,6 @@ const Navigation = () => {
               About
             </button>
             <button 
-              onClick={() => scrollToSection('services')}
-              className="text-primary-foreground hover:text-accent transition-colors"
-            >
-              Services
-            </button>
-            <button 
               onClick={() => scrollToSection('projects')}
               className="text-primary-foreground hover:text-accent transition-colors"
             >
