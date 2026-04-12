@@ -13,11 +13,11 @@ const About = () => {
             Our journey began with a vision to bridge imagination and technology, creating immersive experiences that transform industries. With innovation at our core, we continue to push the boundaries of AR, VR, and 3D technology to redefine digital interaction.
           </p>
         </div>
-        <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
+        <div className="w-full overflow-hidden rounded-2xl shadow-2xl">
           <img 
             src={whoWeAreImage} 
             alt="Trikonantara Team - Immersive Technology Lab" 
-            className="w-full h-[400px] md:h-[500px] object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
       </div>
