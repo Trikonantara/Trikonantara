@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Glasses, GraduationCap, MapPin, Users, Landmark, BookOpen, Building } from "lucide-react";
+import { BookOpen } from "lucide-react";
+import { useState } from "react";
 import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
 import propertyVrImage from "@/assets/property-vr.jpg";
@@ -10,7 +11,6 @@ const projects = [
     subtitle: "Real Estate Visualization in Virtual Reality",
     description: "PROPERTY VR is Trikonantara's immersive solution that brings all types of properties and building projects to life through Virtual Reality. From villas, apartments, and commercial spaces to offices, hospitals, factories, and home renovation projects, users can explore every space in a fully interactive 3D environment before they are built or transformed.",
     details: "Most people find it difficult to understand floor plans and CAD drawings, making it hard to visualize actual space and layout. PROPERTY VR solves this by showing the exact space in real scale, allowing users to walk through and experience the property as if they are physically present. With realistic visuals and accurate measurements, it provides a clear understanding of design, space, and flow. PROPERTY VR helps builders, developers, architects, and homeowners communicate ideas better and make faster, more confident decisions.",
-    icon: Building,
     image: propertyVrImage,
     highlights: [
       "1:1 scale virtual walkthroughs",
@@ -24,7 +24,6 @@ const projects = [
     subtitle: "India's Heritage in Virtual Reality (Flagship Project)",
     description: "Bharat VR is Trikonantara's flagship immersive experience that brings the rich cultural, architectural, and spiritual heritage of India to life through Virtual Reality. This project enables users to virtually explore India's iconic monuments, ancient temples, and forgotten stories, preserving and showcasing the country's timeless beauty through 3D photorealistic environments and interactive storytelling.",
     details: "From the grandeur of Hampi and Khajuraho to the serenity of Bodh Gaya and Varanasi, Bharat VR offers an authentic and emotionally engaging journey through India's living history. Designed for museums, tourism boards, and educational platforms, it aims to make heritage exploration accessible to global audiences through VR headsets and web-based immersive experiences.",
-    icon: Landmark,
     image: bharatVrImage,
     highlights: [
       "1:1 scale digital recreations of historic Indian landmarks",
@@ -38,7 +37,6 @@ const projects = [
     subtitle: "Immersive Learning Redefined",
     description: "Study VR is an innovative educational platform by Trikonantara that transforms traditional learning into an interactive, 3D immersive experience. Built for schools, universities, and training institutions, Study VR bridges the gap between theory and practice by enabling students to visualize complex concepts, interact with virtual labs, and learn by experience, anytime, anywhere.",
     details: "Whether it's exploring human anatomy, understanding space physics, or performing virtual chemistry experiments, Study VR makes learning engaging, safe, and deeply memorable.",
-    icon: GraduationCap,
     image: studyVrImage,
     highlights: [
       "Interactive VR lessons across Science, History, and Engineering",
@@ -50,6 +48,8 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [expanded, setExpanded] = useState<number | null>(null);
+
   return (
     <section id="projects" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -74,9 +74,6 @@ const Projects = () => {
                     index === 0 ? 'object-[center_20%]' : 'object-[center_35%]'
                   }`}
                 />
-                <div className="absolute top-4 left-4 w-14 h-14 bg-background/90 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                  <project.icon className="w-7 h-7 text-accent" />
-                </div>
               </div>
               
               <CardHeader className="bg-gradient-to-r from-primary/5 to-accent/5">
@@ -90,24 +87,36 @@ const Projects = () => {
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   {project.description}
                 </p>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {project.details}
-                </p>
                 
-                <div>
-                  <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
-                    <BookOpen className="w-4 h-4 text-accent" />
-                    Highlights:
-                  </h4>
-                  <ul className="space-y-2">
-                    {project.highlights.map((highlight, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 flex-shrink-0" />
-                        <span className="text-muted-foreground text-sm">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {expanded === index && (
+                  <>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      {project.details}
+                    </p>
+                    
+                    <div>
+                      <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
+                        <BookOpen className="w-4 h-4 text-accent" />
+                        Highlights:
+                      </h4>
+                      <ul className="space-y-2">
+                        {project.highlights.map((highlight, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 flex-shrink-0" />
+                            <span className="text-muted-foreground text-sm">{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                )}
+
+                <button
+                  onClick={() => setExpanded(expanded === index ? null : index)}
+                  className="text-accent font-semibold text-sm hover:underline transition-all"
+                >
+                  {expanded === index ? "Show Less" : "Read More"}
+                </button>
               </CardContent>
             </Card>
           ))}
