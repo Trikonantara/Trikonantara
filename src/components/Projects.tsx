@@ -9,6 +9,7 @@ const projects = [
   {
     title: "PROPERTY VR",
     subtitle: "Real Estate Visualization in Virtual Reality",
+    externalUrl: "https://vr-home-peek.lovable.app",
     description: "PROPERTY VR is Trikonantara's immersive solution that brings all types of properties and building projects to life through Virtual Reality. From villas, apartments, and commercial spaces to offices, hospitals, factories, and home renovation projects, users can explore every space in a fully interactive 3D environment before they are built or transformed.",
     details: "Most people find it difficult to understand floor plans and CAD drawings, making it hard to visualize actual space and layout. PROPERTY VR solves this by showing the exact space in real scale, allowing users to walk through and experience the property as if they are physically present. With realistic visuals and accurate measurements, it provides a clear understanding of design, space, and flow. PROPERTY VR helps builders, developers, architects, and homeowners communicate ideas better and make faster, more confident decisions.",
     image: propertyVrImage,
