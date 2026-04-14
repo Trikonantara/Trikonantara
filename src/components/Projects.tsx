@@ -112,12 +112,24 @@ const Projects = () => {
                   </>
                 )}
 
-                <button
-                  onClick={() => setExpanded(expanded === index ? null : index)}
-                  className="text-accent font-semibold text-sm hover:underline transition-all"
-                >
-                  {expanded === index ? "Show Less" : "Read More"}
-                </button>
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => setExpanded(expanded === index ? null : index)}
+                    className="text-accent font-semibold text-sm hover:underline transition-all"
+                  >
+                    {expanded === index ? "Show Less" : "Read More"}
+                  </button>
+                  {project.externalUrl && (
+                    <a
+                      href={project.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-accent/90 transition-colors"
+                    >
+                      Visit Website
+                    </a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
