@@ -5,7 +5,7 @@ import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
 import propertyVrImage from "@/assets/property-vr.jpg";
 
-const projects = [
+const projects: { title: string; subtitle: string; description: string; details: string; image: string; highlights: string[]; externalUrl?: string }[] = [
   {
     title: "PROPERTY VR",
     subtitle: "Real Estate Visualization in Virtual Reality",
