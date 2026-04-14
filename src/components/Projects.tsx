@@ -5,10 +5,11 @@ import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
 import propertyVrImage from "@/assets/property-vr.jpg";
 
-const projects = [
+const projects: { title: string; subtitle: string; description: string; details: string; image: string; highlights: string[]; externalUrl?: string }[] = [
   {
     title: "PROPERTY VR",
     subtitle: "Real Estate Visualization in Virtual Reality",
+    externalUrl: "https://vr-home-peek.lovable.app",
     description: "PROPERTY VR is Trikonantara's immersive solution that brings all types of properties and building projects to life through Virtual Reality. From villas, apartments, and commercial spaces to offices, hospitals, factories, and home renovation projects, users can explore every space in a fully interactive 3D environment before they are built or transformed.",
     details: "Most people find it difficult to understand floor plans and CAD drawings, making it hard to visualize actual space and layout. PROPERTY VR solves this by showing the exact space in real scale, allowing users to walk through and experience the property as if they are physically present. With realistic visuals and accurate measurements, it provides a clear understanding of design, space, and flow. PROPERTY VR helps builders, developers, architects, and homeowners communicate ideas better and make faster, more confident decisions.",
     image: propertyVrImage,
@@ -111,12 +112,24 @@ const Projects = () => {
                   </>
                 )}
 
-                <button
-                  onClick={() => setExpanded(expanded === index ? null : index)}
-                  className="text-accent font-semibold text-sm hover:underline transition-all"
-                >
-                  {expanded === index ? "Show Less" : "Read More"}
-                </button>
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => setExpanded(expanded === index ? null : index)}
+                    className="text-accent font-semibold text-sm hover:underline transition-all"
+                  >
+                    {expanded === index ? "Show Less" : "Read More"}
+                  </button>
+                  {project.externalUrl && (
+                    <a
+                      href={project.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-accent/90 transition-colors"
+                    >
+                      Visit Website
+                    </a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
