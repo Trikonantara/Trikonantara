@@ -85,19 +85,17 @@ const Projects = () => {
               </CardHeader>
               
               <CardContent className="pt-6 space-y-4 flex-grow">
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {project.description}
-                </p>
-                
                 {expanded === index && (
                   <>
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      {project.description}
+                    </p>
                     <p className="text-muted-foreground leading-relaxed text-sm">
                       {project.details}
                     </p>
                     
                     <div>
-                      <h4 className="font-bold text-foreground mb-3 flex items-center gap-2 text-sm">
-                        <BookOpen className="w-4 h-4 text-accent" />
+                      <h4 className="font-bold text-foreground mb-3 text-sm">
                         Highlights:
                       </h4>
                       <ul className="space-y-2">
