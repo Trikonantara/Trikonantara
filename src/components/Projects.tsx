@@ -37,6 +37,7 @@ const projects: { title: string; subtitle: string; description: string; details:
   {
     title: "STUDY VR",
     subtitle: "Immersive Learning Redefined",
+    externalUrl: "https://immersive-learn-nexus.lovable.app",
     description: "Study VR is an innovative educational platform by Trikonantara that transforms traditional learning into an interactive, 3D immersive experience. Built for schools, universities, and training institutions, Study VR bridges the gap between theory and practice by enabling students to visualize complex concepts, interact with virtual labs, and learn by experience, anytime, anywhere.",
     details: "Whether it's exploring human anatomy, understanding space physics, or performing virtual chemistry experiments, Study VR makes learning engaging, safe, and deeply memorable.",
     image: studyVrImage,
