@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Landmark, GraduationCap } from "lucide-react";
+import { BookOpen, Landmark, GraduationCap, Home } from "lucide-react";
 import { useState } from "react";
 import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
@@ -147,9 +147,11 @@ const Projects = () => {
                         href={project.externalUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground px-4 py-1.5 rounded-md text-sm font-semibold hover:bg-accent/90 transition-colors"
+                        aria-label="Explore Property VR in a new tab"
+                        className="relative inline-flex items-center gap-1.5 px-4 py-1.5 rounded-md text-sm font-semibold text-accent-foreground bg-gradient-to-r from-accent via-primary to-accent shadow-[0_0_15px_hsl(var(--accent)/0.5)] hover:shadow-[0_0_25px_hsl(var(--accent)/0.8)] hover:scale-105 transition-all duration-300"
                       >
-                        Visit Website
+                        <Home className="w-4 h-4" />
+                        Explore Property VR
                       </a>
                     )
                   )}
