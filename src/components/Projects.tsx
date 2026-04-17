@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Landmark } from "lucide-react";
+import { BookOpen, Landmark, GraduationCap } from "lucide-react";
 import { useState } from "react";
 import bharatVrImage from "@/assets/bharat-vr.jpg";
 import studyVrImage from "@/assets/study-vr.jpg";
@@ -129,6 +129,17 @@ const Projects = () => {
                       >
                         <Landmark className="w-4 h-4" />
                         Explore Bharat VR
+                      </a>
+                    ) : project.title === "STUDY VR" ? (
+                      <a
+                        href={project.externalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Explore Study VR in a new tab"
+                        className="relative inline-flex items-center gap-1.5 px-4 py-1.5 rounded-md text-sm font-semibold text-accent-foreground bg-gradient-to-r from-primary via-accent to-accent shadow-[0_0_15px_hsl(var(--accent)/0.5)] hover:shadow-[0_0_25px_hsl(var(--accent)/0.8)] hover:scale-105 transition-all duration-300"
+                      >
+                        <GraduationCap className="w-4 h-4" />
+                        Explore Study VR
                       </a>
                     ) : (
                       <a
