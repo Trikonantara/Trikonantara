@@ -51,6 +51,9 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(135deg, #E3ECFB 0%, #ECE6F5 55%, #F4E6F0 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
