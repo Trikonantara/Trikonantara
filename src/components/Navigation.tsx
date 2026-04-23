@@ -17,8 +17,11 @@ const Navigation = () => {
             onClick={() => scrollToSection('home')}
             className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer"
           >
-            <img src={logo} alt="Trikonantara" className="h-[64px] w-auto" />
-            <span className="text-2xl font-bold text-primary-foreground">TRIKONANTARA</span>
+            <img src={logo} alt="Trikonantara" className="h-[49px] w-auto" />
+            <div className="flex flex-col leading-none">
+              <span className="text-2xl font-bold text-primary-foreground tracking-wide">TRIKONANTARA</span>
+              <span className="text-[10px] font-semibold text-accent tracking-[0.2em] mt-1">INNOVATION TECHNOLOGY PVT.LTD.</span>
+            </div>
           </button>
           
           <div className="hidden md:flex items-center gap-8">
