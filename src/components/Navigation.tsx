@@ -10,7 +10,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-[#2E6FBF]/10"
+      style={{ background: 'linear-gradient(90deg, #E3ECFB 0%, #ECE6F5 60%, #F4E6F0 100%)' }}
+    >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <button 
@@ -27,33 +30,38 @@ const Navigation = () => {
           <div className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-primary-foreground hover:text-accent transition-colors"
+              className="text-sm font-semibold tracking-wide transition-colors hover:opacity-80"
+              style={{ color: '#2E6FBF' }}
             >
-              Home
+              HOME
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-primary-foreground hover:text-accent transition-colors"
+              className="text-sm font-semibold tracking-wide transition-colors hover:opacity-80"
+              style={{ color: '#2E6FBF' }}
             >
-              About
+              ABOUT US
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-primary-foreground hover:text-accent transition-colors"
+              className="text-sm font-semibold tracking-wide transition-colors hover:opacity-80"
+              style={{ color: '#2E6FBF' }}
             >
-              Services
+              SERVICES
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-primary-foreground hover:text-accent transition-colors"
+              className="text-sm font-semibold tracking-wide transition-colors hover:opacity-80"
+              style={{ color: '#2E6FBF' }}
             >
-              Projects
+              PRODUCTS
             </button>
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              className="text-white font-semibold tracking-wide hover:opacity-90"
+              style={{ background: 'linear-gradient(90deg, #2E6FBF 0%, #7E3F98 100%)' }}
             >
-              Contact Us
+              CONTACT US
             </Button>
           </div>
         </div>
