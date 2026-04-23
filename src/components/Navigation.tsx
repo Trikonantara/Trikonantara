@@ -19,8 +19,8 @@ const Navigation = () => {
           >
             <img src={logo} alt="Trikonantara" className="h-[49px] w-auto" />
             <div className="flex flex-col leading-none">
-              <span className="text-2xl font-bold text-primary-foreground tracking-wide">TRIKONANTARA</span>
-              <span className="text-[10px] font-semibold text-accent tracking-[0.2em] mt-1">INNOVATION TECHNOLOGY PVT.LTD.</span>
+              <span className="text-2xl font-bold tracking-wide" style={{ color: '#2E6FBF' }}>TRIKONANTARA</span>
+              <span className="text-[10px] font-semibold tracking-[0.2em] mt-1" style={{ color: '#7E3F98' }}>INNOVATION TECHNOLOGY PVT.LTD.</span>
             </div>
           </button>
           
