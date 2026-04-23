@@ -8,38 +8,38 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 17% 15%;
+    --background: 220 60% 96%;
+    --foreground: 215 35% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 17% 15%;
+    --card-foreground: 215 35% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 17% 15%;
+    --popover-foreground: 215 35% 20%;
 
-    --primary: 212 47% 14%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 214 62% 47%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 212 47% 14%;
+    --secondary: 280 35% 92%;
+    --secondary-foreground: 215 35% 20%;
 
-    --muted: 210 40% 96%;
+    --muted: 270 40% 94%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 24 95% 63%;
+    --accent: 285 42% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 212 47% 14%;
+    --border: 220 30% 88%;
+    --input: 220 30% 88%;
+    --ring: 214 62% 47%;
 
     --radius: 0.5rem;
 
-    --hero-gradient-start: 212 47% 14%;
-    --hero-gradient-end: 218 41% 25%;
+    --hero-gradient-start: 214 62% 47%;
+    --hero-gradient-end: 285 42% 42%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -51,6 +51,9 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(135deg, #E3ECFB 0%, #ECE6F5 55%, #F4E6F0 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
