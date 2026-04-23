@@ -38,8 +38,8 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --hero-gradient-start: 214 62% 47%;
-    --hero-gradient-end: 285 42% 42%;
+    --hero-gradient-start: 212 47% 14%;
+    --hero-gradient-end: 218 41% 25%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
