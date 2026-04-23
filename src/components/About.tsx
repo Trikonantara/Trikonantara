@@ -2,7 +2,7 @@ import whoWeAreImage from "@/assets/who-we-are.png";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-muted/30">
+    <section id="about" className="py-24 bg-transparent">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Who We Are</h2>
