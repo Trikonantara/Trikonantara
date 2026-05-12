@@ -11,6 +11,22 @@ const testimonials = [
     rating: 5,
     image: srinivasaNaiduPhoto,
   },
+  {
+    name: "Sreedhar Kumar",
+    role: "IT Professional",
+    quote:
+      "PROPERTY VR team helped us visualize our flat exactly the way we imagined. Their 3D and VR presentation made it easy to finalize the design quickly, while saving both our time and overall design costs.",
+    rating: 5,
+    image: null,
+  },
+  {
+    name: "Naresh Tiparthi",
+    role: "Civil Engineer",
+    quote:
+      "PROPERTY VR transformed our floor plan into a complete 3D and VR experience, which helped us understand the final outcome before construction. It made the design process easier, saved valuable time during execution, and improved decision-making throughout the project.",
+    rating: 5,
+    image: null,
+  },
 ];
 
 const Testimonials = () => {
