@@ -23,7 +23,7 @@ const testimonials = [
   },
   {
     name: "Naresh Tiparthi",
-    role: "Civil Engineer",
+    role: "Mechanical Engineer",
     quote:
       "PROPERTY VR transformed our floor plan into a complete 3D and VR experience, which helped us understand the final outcome before construction. It made the design process easier, saved valuable time during execution, and improved decision-making throughout the project.",
     rating: 5,
