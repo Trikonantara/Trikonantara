@@ -1,6 +1,8 @@
 import { Star } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import srinivasaNaiduPhoto from "@/assets/srinivasa-naidu.jpg";
+import sreedharPhoto from "@/assets/sreedhar-kumar.jpg";
+import nareshPhoto from "@/assets/naresh-tiparthi.jpg";
 
 const testimonials = [
   {
@@ -17,7 +19,7 @@ const testimonials = [
     quote:
       "PROPERTY VR team helped us visualize our flat exactly the way we imagined. Their 3D and VR presentation made it easy to finalize the design quickly, while saving both our time and overall design costs.",
     rating: 5,
-    image: null,
+    image: sreedharPhoto,
   },
   {
     name: "Naresh Tiparthi",
@@ -25,7 +27,7 @@ const testimonials = [
     quote:
       "PROPERTY VR transformed our floor plan into a complete 3D and VR experience, which helped us understand the final outcome before construction. It made the design process easier, saved valuable time during execution, and improved decision-making throughout the project.",
     rating: 5,
-    image: null,
+    image: nareshPhoto,
   },
 ];
 
